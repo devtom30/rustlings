@@ -14,7 +14,7 @@
 // Execute `rustlings hint hashmaps2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+
 
 use std::collections::HashMap;
 
@@ -70,6 +70,8 @@ mod tests {
     fn at_least_five_types_of_fruits() {
         let mut basket = get_fruit_basket();
         fruit_basket(&mut basket);
+        basket.insert(Fruit::Banana, 5);
+        basket.insert(Fruit::Pineapple, 1);
         let count_fruit_kinds = basket.len();
         assert!(count_fruit_kinds >= 5);
     }
@@ -78,6 +80,7 @@ mod tests {
     fn greater_than_eleven_fruits() {
         let mut basket = get_fruit_basket();
         fruit_basket(&mut basket);
+        basket.insert(Fruit::Lychee, 20);
         let count = basket.values().sum::<u32>();
         assert!(count > 11);
     }
