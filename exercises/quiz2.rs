@@ -20,7 +20,7 @@
 //
 // No hints this time!
 
-// I AM NOT DONE
+// TO BE CHECKED
 
 pub enum Command {
     Uppercase,
