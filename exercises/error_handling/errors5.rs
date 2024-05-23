@@ -70,10 +70,4 @@ impl fmt::Display for CreationError {
     }
 }
 
-impl Display for CreationError {
-    fn fmt(&self, f: &mut Formatter<'_>) -> fmt::Result {
-        "CreationError"
-    }
-}
-
 impl error::Error for CreationError {}
